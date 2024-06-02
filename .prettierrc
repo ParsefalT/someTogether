@@ -1,0 +1,16 @@
+{
+	"useTabs": true,
+	"tabWidth": 2,
+	"semi": true,
+	"singleQuote": false,
+	"jsxSingleQuote": false,
+	"jsxBracketSameLine": true,
+	"proseWrap": "always",
+	"quoteProps": "as-needed",
+	"bracketSpacing": true,
+	"trailingComma": "all",
+	"printWidth": 120,
+	"arrowParens": "always",
+	"endOfLine": "lf",
+	"extends": [".eslintrc.*", "prettier"]
+}

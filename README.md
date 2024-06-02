@@ -1,4 +1,3 @@
-# someTogether
+# React + TypeScript + Vite
 
-### We will do something for _test_ and _improve_ our skills 
-
+## We do something together for up/test our _skills_
