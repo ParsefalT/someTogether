@@ -1,0 +1,23 @@
+.btn {
+	width: 100%;
+	border-radius: 20px;
+	padding: 13px 60px;
+	background-color: #5d71dd;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.search {
+	max-width: 196px;
+}
+
+.send {
+	max-width: 440px;
+}
+
+.reload {
+	max-width: 280px;
+}

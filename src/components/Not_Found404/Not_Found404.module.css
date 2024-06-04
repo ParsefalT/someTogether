@@ -1,0 +1,24 @@
+.error {
+	margin: 125px 0;
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	gap: 40px;
+}
+
+.textError {
+	text-align: center;
+}
+
+.back {
+	border-radius: 8px;
+	padding: 10px 16px;
+	height: 43px;
+	background: rgba(93, 113, 221, 0.05);
+}
+
+@media (max-width: 771px) {
+	.error {
+		margin: 34px 0;
+	}
+}

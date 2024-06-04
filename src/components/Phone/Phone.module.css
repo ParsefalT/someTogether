@@ -1,0 +1,41 @@
+.blockPhone {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
+
+.phoneImg {
+	color: var(--main-color);
+	font-size: 22px;
+}
+
+.phone {
+	transition: all 0.3s;
+}
+.phone:hover {
+	color: #243fd8;
+}
+
+@media (max-width: 1024px) {
+	.phoneImg {
+		color: var(--main-color);
+		font-size: 18px;
+	}
+
+	.phone {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 620px) {
+	.blockPhone {
+		font-size: 30px;
+		margin-top: 40px;
+		& > span {
+			font-size: unset;
+		}
+		& > a {
+			font-size: unset;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.blockForm {
+	width: 100%;
+	max-width: 560px;
+	background-color: #fff;
+	padding: 40px 60px;
+	border-radius: 20px;
+}
+
+.titleForm {
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.input {
+	border: none;
+	outline: none;
+	height: 50px;
+	border-radius: 20px;
+	padding: 13px 30px;
+	background-color: #f5f5f5;
+	color: #000;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.textarea {
+	border: none;
+	outline: none;
+	height: 50px;
+	border-radius: 20px;
+	padding: 13px 30px;
+	background-color: #f5f5f5;
+	color: #000;
+	resize: none;
+	min-height: 80px;
+	font-size: 18px;
+	font-weight: 500;
+	overflow-y: scroll;
+}
+
+.btn {
+	background: #f5f5f5;
+	outline: none;
+	height: 50px;
+	border-radius: 20px;
+	color: white;
+	padding: 13px 68px;
+	background-color: var(--main-color);
+}
+
+@media (max-width: 771px) {
+	.blockForm {
+		max-width: none;
+		border-radius: 0;
+	}
+}

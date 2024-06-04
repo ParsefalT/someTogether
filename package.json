@@ -29,11 +29,15 @@
 		]
 	},
 	"dependencies": {
+		"@ant-design/icons": "^5.3.7",
 		"antd": "^5.17.4",
+		"clsx": "^2.1.1",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.23.1"
 	},
 	"devDependencies": {
+		"@types/node": "^20.13.0",
 		"@types/react": "^18.2.66",
 		"@types/react-dom": "^18.2.22",
 		"@typescript-eslint/eslint-plugin": "^7.2.0",

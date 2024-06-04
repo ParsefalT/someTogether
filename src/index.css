@@ -1,5 +1,8 @@
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	/* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+	font-family: "Roboto Slab", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
 	line-height: 1.5;
 	font-weight: 400;
 
@@ -11,6 +14,12 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	/* my_var */
+	--bg-color: #e5e5e5;
+	--main-color: #5d71dd;
+	--main-color-d: #4e60cc;
+	--footer-bg: rgba(93, 113, 221, 0.05);
 }
 
 a {
@@ -22,12 +31,18 @@ a:hover {
 	color: #535bf2;
 }
 
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	margin: 0;
-	display: flex;
-	place-items: center;
-	min-width: 320px;
-	min-height: 100vh;
+	/* display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh; */
 }
 
 h1 {
@@ -54,7 +69,7 @@ button:focus-visible {
 	outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
 	:root {
 		color: #213547;
 		background-color: #ffffff;
