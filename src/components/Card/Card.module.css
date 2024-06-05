@@ -1,8 +1,9 @@
 .wrapper {
+	position: relative;
 	padding: 40px 30px;
 	background: #5d71dd;
 	border-radius: 20px;
-	min-width: 320px;
+	/* min-width: 320px; */
 	min-height: 400px;
 	transition: all 0.5s;
 	cursor: pointer;
@@ -15,11 +16,13 @@
 	}
 }
 .data {
-	margin-top: 170px;
+	position: absolute;
+	bottom: 40px;
 }
 
 .wrapper:hover {
-	background: white;
+	box-shadow: 4px 8px 40px 0 rgba(8, 24, 111, 0.2);
+	background: #fff;
 	.text {
 		color: black;
 	}

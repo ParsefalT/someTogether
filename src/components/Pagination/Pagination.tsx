@@ -23,7 +23,7 @@ const ItemPagination: PaginationProps["itemRender"] = (_, type, originalElement)
 const MyPagination = (): JSX.Element => {
 	return (
 		<Pagination
-			className={styles.center}
+			className={styles.pagination}
 			defaultCurrent={1}
 			total={100}
 			itemRender={ItemPagination}

@@ -7,8 +7,14 @@
 	background-color: var(--main-color-d) !important;
 }
 
-.center {
+.pagination {
 	display: flex;
 	justify-content: center;
-	margin-top: 80px;
+	margin-top: 60px;
+}
+
+@media (max-width: 620px) {
+	.btn {
+		display: none;
+	}
 }

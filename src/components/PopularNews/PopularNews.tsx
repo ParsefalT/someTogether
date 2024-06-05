@@ -3,7 +3,7 @@ import styles from "./PopularNews.module.css";
 import News from "@/News/News";
 const PopularNews = (): JSX.Element => {
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.aside}>
 			<h1 className={styles.title}>Популярные новости</h1>
 			<div className={styles.news}>
 				<News data="###" text="ITAM&SAMDay – самая настоящая удача!" />

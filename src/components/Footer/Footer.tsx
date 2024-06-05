@@ -1,12 +1,14 @@
 import Btn from "@/Btn/Btn";
 import styles from "./Footer.module.css";
+import Navbar from "@/Navbar/Navbar";
 const Footer = (): JSX.Element => {
-	const data = new Date().getFullYear();
+	const data: number = new Date().getFullYear();
+
 	return (
 		<footer className={styles.footer}>
 			<Btn />
-			<nav>
-				<ul className={styles.ul}>
+			<Navbar>
+				<div className={styles.footerLinks}>
 					<li>
 						<a href="/">О нас</a>
 					</li>
@@ -19,8 +21,8 @@ const Footer = (): JSX.Element => {
 					<li>
 						<a href="">Контакты</a>
 					</li>
-				</ul>
-			</nav>
+				</div>
+			</Navbar>
 			<div className={styles.info}>ООО “Организация” {data}. Все права защищены</div>
 		</footer>
 	);
