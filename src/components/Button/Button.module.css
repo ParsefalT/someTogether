@@ -8,6 +8,15 @@
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
+	transition: all 0.2s;
+}
+
+.btn:hover {
+	transform: scale(1.06);
+}
+
+.btn:active {
+	transform: scale(1);
 }
 
 .search {

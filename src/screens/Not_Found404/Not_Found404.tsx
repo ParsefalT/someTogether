@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import not_foundL from "../../assets/404L.png";
 import not_foundM from "../../assets/404M.png";
 import not_foundS from "../../assets/404S.png";
@@ -12,9 +13,10 @@ const Not_Found404 = (): JSX.Element => {
 				<img src={not_foundL} alt="not_found404" />
 			</picture>
 			<h2 className={styles.textError}>Что-то пошло не так...</h2>
-			<a href="/" className={styles.back}>
-				<img src={backArrow} alt="backArrow" /> Вернуться назад
-			</a>
+			<div className={styles.back}>
+				<img src={backArrow} alt="backArrow" />
+				<Link to="/">Вернуться назад</Link>
+			</div>
 		</div>
 	);
 };

@@ -1,0 +1,22 @@
+.search {
+	width: 100%;
+	max-width: 1400px;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+.title {
+	margin-top: 80px;
+	font-weight: 500;
+	font-size: 30px;
+	color: #2f2222;
+}
+
+.text {
+	margin-top: 20px;
+	font-weight: 400;
+	font-size: 18px;
+	color: rgba(47, 34, 34, 0.4);
+}

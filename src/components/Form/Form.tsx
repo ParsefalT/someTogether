@@ -1,3 +1,4 @@
+import Button from "@/Button/Button";
 import styles from "./Form.module.css";
 const Form = () => {
 	return (
@@ -7,7 +8,7 @@ const Form = () => {
 				<input className={styles.input} required type="text" name="name" id="" placeholder="Ваше имя" />
 				<input className={styles.input} required type="text" name="phone" id="" placeholder="Телефон или E-mail" />
 				<textarea className={styles.textarea} name="message" id="" placeholder="Сообщение"></textarea>
-				<button className={styles.btn}>Отправить</button>
+				<Button send="Отправить" />
 			</form>
 		</div>
 	);

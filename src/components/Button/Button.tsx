@@ -20,7 +20,7 @@ const Button = ({ search, send, reload }: IButtonProps): JSX.Element => {
 			)}
 			{reload && (
 				<button className={cl([styles.btn, styles.reload])}>
-					{reload} <img src={reloadSvg} alt="search" />
+					{reload} <img src={reloadSvg} alt="reload" />
 				</button>
 			)}
 		</>

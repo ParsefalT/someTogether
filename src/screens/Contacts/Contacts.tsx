@@ -14,25 +14,26 @@ const Contacts = () => {
 					<Phone phone="+7 (987) 887-87" />
 				</div>
 				<div className={styles.place}>г. Санкт-Петербург, ул. Ленина, 9</div>
+				<div>Ир, привет. Давай будем бэсти?</div>
 				<ul className={styles.ul}>
 					<li>
 						<a href="">
-							<img src={vk} alt="twivkt" />
+							<img src={vk} alt="twivkt" className={styles.img} />
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<img src={facebook} alt="facebook" />
+							<img src={facebook} alt="facebook" className={styles.img} />
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<img src={insta} alt="instagram" />
+							<img src={insta} alt="instagram" className={styles.img} />
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<img src={twit} alt="twit" />
+							<img src={twit} alt="twit" className={styles.img} />
 						</a>
 					</li>
 				</ul>

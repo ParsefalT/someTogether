@@ -11,6 +11,11 @@
 	align-items: center;
 	justify-content: space-between;
 	background-color: #fff;
+	position: relative;
+}
+
+.btn {
+	height: 44px;
 }
 
 .navLinks {
@@ -39,11 +44,17 @@
 }
 
 .burger {
+	position: fixed;
+	right: 20px;
 	display: none;
 	z-index: 1;
 	font-size: 32px;
 	cursor: pointer;
 	color: black;
+}
+
+.active {
+	color: var(--main-color-d) !important;
 }
 
 @media (max-width: 1400px) {

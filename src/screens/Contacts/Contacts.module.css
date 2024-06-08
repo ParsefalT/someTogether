@@ -17,6 +17,20 @@
 	list-style-type: none;
 	display: flex;
 	gap: 20px;
+	& > li {
+		transition: all 0.4s;
+	}
+	& > li:hover {
+		transform: scale(1.06);
+	}
+}
+
+.img {
+	transition: all 0.4s;
+}
+.img:hover {
+	border-radius: 100%;
+	box-shadow: 0px 0px 6px 6px rgba(66, 94, 255, 0.2);
 }
 
 .phone {
@@ -51,6 +65,6 @@
 
 	.contact {
 		max-width: none;
-		padding: 20px;
+		padding: 0 20px;
 	}
 }

@@ -1,0 +1,26 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	gap: 30px;
+}
+
+.title {
+	margin-top: 20px;
+}
+
+.img {
+	border-radius: 100%;
+	animation: some infinite 2s alternate;
+	width: 100%;
+	padding: 15px;
+}
+
+@keyframes some {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.06);
+	}
+}

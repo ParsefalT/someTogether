@@ -9,6 +9,10 @@
 	flex-direction: column;
 }
 
+.btn {
+	height: 44px;
+}
+
 .footerLinks {
 	margin: 20px 0;
 	display: flex;
@@ -34,4 +38,8 @@
 
 .info {
 	text-align: center;
+}
+
+.active {
+	color: var(--main-color-d) !important;
 }
