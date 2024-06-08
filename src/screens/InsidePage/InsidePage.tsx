@@ -5,7 +5,6 @@ import backArrow from "../../assets/backArrow.svg";
 import forwardArrow from "../../assets/forwardArrow.svg";
 import insideJpg from "../../assets/inside.jpg";
 import insdeSmall from "../../assets/insideSmall.png";
-import Info from "@/Info/Info";
 import Category from "@/Category/Category";
 import P from "@/P/P";
 const InsideBlock = () => {
