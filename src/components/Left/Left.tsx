@@ -1,10 +1,11 @@
 import Card from "@/Card/Card";
 import Info from "@/Info/Info";
 import styles from "./Left.module.css";
-const Left = () => {
+import { ILeftProps } from "./ILeft.props";
+const Left = ({ image }: ILeftProps): JSX.Element => {
 	return (
 		<div className={styles.wrapper}>
-			<Card />
+			<Card image={image} />
 			<div className={styles.info}>
 				<Info
 					s={true}

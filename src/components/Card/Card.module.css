@@ -3,7 +3,7 @@
 	padding: 40px 30px;
 	background: #5d71dd;
 	border-radius: 20px;
-	/* min-width: 320px; */
+	min-width: 320px;
 	min-height: 400px;
 	transition: all 0.5s;
 	cursor: pointer;
