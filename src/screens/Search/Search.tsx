@@ -1,4 +1,3 @@
-import InputSearch from "@/InputSearch/InputSearch";
 import styles from "./Search.module.css";
 import Info from "@/Info/Info";
 import { useState } from "react";
