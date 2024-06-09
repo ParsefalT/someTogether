@@ -99,6 +99,7 @@
 		position: fixed;
 		top: 0;
 		right: -100%;
+		z-index: 1;
 	}
 	.navLinks_show {
 		position: fixed;
@@ -115,6 +116,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		z-index: 1;
 	}
 	.blockPhone {
 		font-size: 30px;

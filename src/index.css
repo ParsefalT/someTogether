@@ -14,7 +14,7 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
+	overscroll-behavior: none;
 	/* my_var */
 	--bg-color: #e5e5e5;
 	--main-color: #5d71dd;
@@ -49,6 +49,7 @@ html {
 }
 body {
 	overscroll-behavior: none;
+	overflow: hidden;
 }
 #root {
 	overscroll-behavior: none;
@@ -58,6 +59,12 @@ body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	min-height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
 }
 
 h1 {
