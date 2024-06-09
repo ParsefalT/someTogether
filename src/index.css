@@ -44,8 +44,15 @@ a:hover {
 	align-items: center;
 	min-height: 100vh;
 } */
-
+html {
+	overscroll-behavior: none;
+}
+body {
+	overscroll-behavior: none;
+}
 #root {
+	overscroll-behavior: none;
+	color: black;
 	background-color: var(--bg-color);
 	width: 100%;
 	display: grid;
