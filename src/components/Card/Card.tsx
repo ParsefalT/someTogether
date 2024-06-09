@@ -1,7 +1,7 @@
 import styles from "./Card.module.css";
 import Category from "@/Category/Category";
 import { ICardProps } from "./Card.props";
-const Card = ({ image }: ICardProps): JSX.Element => {
+const Card = ({ image, color }: ICardProps): JSX.Element => {
 	const styleBg = image
 		? {
 				backgroundImage: `url(${image})`,
@@ -12,7 +12,7 @@ const Card = ({ image }: ICardProps): JSX.Element => {
 		: undefined;
 	return (
 		<div className={styles.wrapper} style={styleBg}>
-			<Category text="Категория 1" color="white" />
+			<Category text="Категория 1" color={color} />
 			<div className={styles.text}>ITAM&SAMDay – самая настоящая удача!</div>
 			<div className={styles.data}>13 дек 2020</div>
 		</div>

@@ -6,7 +6,7 @@ const Info = ({ text, title, s, m }: IInfoProps) => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.header}>
-				<Category text="Категория 1" color="blue" />
+				<Category text="Категория 1" />
 				<div>data</div>
 			</div>
 			<h2

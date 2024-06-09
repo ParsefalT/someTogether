@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import styles from "./Category.module.css";
 import { ICategoryProps } from "./ICategory.props";
 import clsx from "clsx";
@@ -9,7 +10,7 @@ const Category = ({ text, color }: ICategoryProps): JSX.Element => {
 				[styles.blue]: color == "blue",
 			})}
 		>
-			{text}
+			<Link to="/category">{text}</Link>
 		</div>
 	);
 };

@@ -1,6 +1,14 @@
 .wrapper {
 	display: flex;
 	gap: 30px;
+	> div:first-child {
+		div:nth-child(2) {
+			color: white;
+		}
+		div:last-child {
+			color: white;
+		}
+	}
 }
 .info {
 	display: flex;
@@ -9,7 +17,7 @@
 	gap: 40px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 820px) {
 	.wrapper {
 		flex-direction: column;
 	}
