@@ -8,14 +8,15 @@ import { Toaster } from "react-hot-toast";
 import { notify } from "../../utils/notification";
 
 const Info = ({ text, title, s, m }: IInfoProps) => {
-	const [selectNew, setSelectNew] = useState(false);
+	const [selectNew, setSelectNew] = useState<boolean>(true);
 
 	function handleSelectNew(event: MouseEvent) {
 		const target = event.target as HTMLElement;
-		target.classList.toggle(styles.add);
-		if (target.classList.contains(styles.add)) {
+		if (selectNew) {
+			target.classList.add(styles.add);
 			notify(["Вы добавили новость", "✅"]);
 		} else {
+			target.classList.remove(styles.add);
 			notify(["Вы удалил новость", "⚠️"]);
 		}
 		setSelectNew((prev) => !prev);
