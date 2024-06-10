@@ -4,15 +4,21 @@ import { IInfoProps } from "./Info.props";
 import clsx from "clsx";
 import { StarOutlined } from "@ant-design/icons";
 import { MouseEvent, useState } from "react";
+import { Toaster } from "react-hot-toast";
+import { notify } from "../../utils/notification";
+
 const Info = ({ text, title, s, m }: IInfoProps) => {
 	const [selectNew, setSelectNew] = useState(false);
+
 	function handleSelectNew(event: MouseEvent) {
 		const target = event.target as HTMLElement;
 		target.classList.toggle(styles.add);
-		setSelectNew((prev) => {
-			target.classList.toggle(styles.add);
-			return !prev;
-		});
+		if (target.classList.contains(styles.add)) {
+			notify(["Вы добавили новость", "✅"]);
+		} else {
+			notify(["Вы удалил новость", "⚠️"]);
+		}
+		setSelectNew((prev) => !prev);
 	}
 
 	return (
@@ -31,6 +37,7 @@ const Info = ({ text, title, s, m }: IInfoProps) => {
 				{title}
 			</h2>
 			{text && <div className={styles.text}>{text}</div>}
+			<Toaster />
 		</div>
 	);
 };

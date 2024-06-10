@@ -1,5 +1,6 @@
 import Info from "@/Info/Info";
 import styles from "./SelectNews.module.css";
+
 const SelectNews = () => {
 	const news: string[] = [];
 	return (
