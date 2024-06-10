@@ -44,13 +44,12 @@ a:hover {
 	align-items: center;
 	min-height: 100vh;
 } */
-html {
-	overscroll-behavior: none;
-}
+
 body {
 	overscroll-behavior: none;
 	overflow: hidden;
 }
+
 #root {
 	overscroll-behavior: none;
 	color: black;

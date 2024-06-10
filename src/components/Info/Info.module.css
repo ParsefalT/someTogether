@@ -5,11 +5,28 @@
 	box-shadow: 4px 8px 40px 0 rgba(8, 24, 111, 0.2);
 	background: #fff;
 	cursor: pointer;
+	position: relative;
 }
+.star {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 25px;
+	transition: all 0.4s;
+}
+
+.star:hover {
+	transform: scale(1.2);
+}
+
+.add {
+	fill: rgb(247, 247, 63);
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
-	align-items: start;
+	align-items: center;
 }
 
 .title {

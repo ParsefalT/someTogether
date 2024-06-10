@@ -1,9 +1,8 @@
 .wrapper {
-	margin: 130px auto;
+	margin: auto auto;
 	width: 100%;
 	max-width: 1160px;
 	display: flex;
-	/* gap: 290px; */
 	justify-content: space-between;
 }
 

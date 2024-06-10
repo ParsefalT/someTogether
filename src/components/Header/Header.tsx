@@ -63,6 +63,16 @@ const Header = (): JSX.Element => {
 							</li>
 							<li>
 								<Link
+									to="/selectnews"
+									className={clsx(styles.link, {
+										[styles.active]: link == "/selectnews",
+									})}
+								>
+									Избранные
+								</Link>
+							</li>
+							<li>
+								<Link
 									to="/search"
 									className={clsx(styles.link, {
 										[styles.active]: link == "/search",

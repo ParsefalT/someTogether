@@ -11,6 +11,7 @@
 // Import Routes
 
 import { Route as rootRoute } from "./routes/__root";
+import { Route as SelectnewsImport } from "./routes/selectnews";
 import { Route as SearchImport } from "./routes/search";
 import { Route as NewsImport } from "./routes/news";
 import { Route as GalleryImport } from "./routes/gallery";
@@ -21,6 +22,11 @@ import { Route as IndexImport } from "./routes/index";
 import { Route as InsideInsideImport } from "./routes/inside/$inside";
 
 // Create/Update Routes
+
+const SelectnewsRoute = SelectnewsImport.update({
+	path: "/selectnews",
+	getParentRoute: () => rootRoute,
+} as any);
 
 const SearchRoute = SearchImport.update({
 	path: "/search",
@@ -115,6 +121,13 @@ declare module "@tanstack/react-router" {
 			preLoaderRoute: typeof SearchImport;
 			parentRoute: typeof rootRoute;
 		};
+		"/selectnews": {
+			id: "/selectnews";
+			path: "/selectnews";
+			fullPath: "/selectnews";
+			preLoaderRoute: typeof SelectnewsImport;
+			parentRoute: typeof rootRoute;
+		};
 		"/inside/$inside": {
 			id: "/inside/$inside";
 			path: "/inside/$inside";
@@ -135,6 +148,7 @@ export const routeTree = rootRoute.addChildren({
 	GalleryRoute,
 	NewsRoute,
 	SearchRoute,
+	SelectnewsRoute,
 	InsideInsideRoute,
 });
 
@@ -153,6 +167,7 @@ export const routeTree = rootRoute.addChildren({
         "/gallery",
         "/news",
         "/search",
+        "/selectnews",
         "/inside/$inside"
       ]
     },
@@ -176,6 +191,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/search": {
       "filePath": "search.tsx"
+    },
+    "/selectnews": {
+      "filePath": "selectnews.tsx"
     },
     "/inside/$inside": {
       "filePath": "inside/$inside.tsx"
