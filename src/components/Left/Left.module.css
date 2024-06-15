@@ -1,5 +1,6 @@
 .wrapper {
 	display: flex;
+	height: 400px;
 	gap: 30px;
 	> div:first-child {
 		div:nth-child(2) {
@@ -20,6 +21,7 @@
 @media (max-width: 820px) {
 	.wrapper {
 		flex-direction: column;
+		height: 100%;
 	}
 	.info {
 		gap: 20px;

@@ -26,7 +26,7 @@ const Info = ({ text, title, s, m }: IInfoProps) => {
 		<div className={styles.wrapper}>
 			<StarOutlined className={styles.star} onClick={(event) => handleSelectNew(event)} />
 			<div className={styles.header}>
-				<Category text="Категория 1" />
+				<Category text="Категория 1" color="blue" />
 				<div>data</div>
 			</div>
 			<h2

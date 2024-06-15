@@ -1,6 +1,7 @@
 .wrapper {
 	display: flex;
 	gap: 30px;
+	height: 400px;
 	> div:hover {
 		> div {
 			a {
@@ -12,6 +13,7 @@
 
 @media (max-width: 820px) {
 	.wrapper {
+		height: 100%;
 		flex-direction: column;
 	}
 }

@@ -4,7 +4,8 @@
 	background: #5d71dd;
 	border-radius: 20px;
 	min-width: 320px;
-	min-height: 400px;
+	/* min-height: 400px; */
+	height: 400px;
 	transition: all 0.5s;
 	cursor: pointer;
 	.text {
