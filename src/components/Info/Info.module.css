@@ -53,4 +53,7 @@
 		/* overflow: auto; */
 		height: 100%;
 	}
+	.title {
+		font-size: 18px;
+	}
 }
