@@ -1,6 +1,6 @@
 import styles from "./InsidePage.module.css";
 import test from "../../assets/backgroundL.jpg";
-import PopularNews from "@/PopularNews/PopularNews";
+import Aside from "@/Aside/Aside";
 import backArrow from "../../assets/backArrow.svg";
 import forwardArrow from "../../assets/forwardArrow.svg";
 import insideJpg from "../../assets/inside.jpg";
@@ -72,7 +72,7 @@ const InsideBlock = () => {
 						</div>
 					</div>
 				</div>
-				<PopularNews />
+				<Aside />
 			</section>
 		</div>
 	);

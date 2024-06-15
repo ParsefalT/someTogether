@@ -1,7 +1,7 @@
 import Button from "@/Button/Button";
-import styles from "./PopularNews.module.css";
+import styles from "./Aside.module.css";
 import News from "@/News/News";
-const PopularNews = (): JSX.Element => {
+const Aside = (): JSX.Element => {
 	return (
 		<div className={styles.aside}>
 			<h1 className={styles.title}>Популярные новости</h1>
@@ -27,4 +27,4 @@ const PopularNews = (): JSX.Element => {
 	);
 };
 
-export default PopularNews;
+export default Aside;

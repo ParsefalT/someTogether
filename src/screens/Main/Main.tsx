@@ -1,6 +1,6 @@
-import Article from "@/Article/Article";
 import Background from "@/Background/Background";
-import PopularNews from "@/PopularNews/PopularNews";
+import Article from "@/Article/Article";
+import Aside from "@/Aside/Aside";
 import styles from "./Main.module.css";
 import Category from "@/Category/Category";
 
@@ -17,7 +17,7 @@ const Main = () => {
 			)}
 			<section className={styles.wrapper}>
 				<Article />
-				<PopularNews />
+				<Aside />
 			</section>
 		</>
 	);

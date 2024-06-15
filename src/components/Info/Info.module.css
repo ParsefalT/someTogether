@@ -23,7 +23,7 @@
 }
 
 .add {
-	fill: rgb(247, 247, 63);
+	fill: rgb(253, 37, 37);
 }
 
 .header {
@@ -50,7 +50,6 @@
 
 @media (max-width: 820px) {
 	.wrapper {
-		/* overflow: auto; */
 		height: 100%;
 	}
 	.title {
